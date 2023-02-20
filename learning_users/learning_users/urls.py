@@ -15,9 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
-from django.conf.urls.static import static
+
 from basic_app import views
-from django.conf import settings
+
 
 urlpatterns = [
     path(r'',views.index,name='index'),
@@ -27,5 +27,3 @@ urlpatterns = [
     path(r'special/',views.special,name='special'),
 
 ]
-if settings.DEBUG:
-    urlpatterns += static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)
