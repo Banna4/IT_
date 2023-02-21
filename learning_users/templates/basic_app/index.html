@@ -8,6 +8,7 @@
 <div class="jumbotron">
     <form action={% url 'basic_app:user_login' %}>
         {% csrf_token %}
+        <h2>WELCOME TO VIRTUAL WATCHING TIME</h2>
         <p></p>
         <label for="creatroom">Username</label>
         <input type="text" name="creatroom" placeholder="NAME PLEASE">
@@ -23,9 +24,6 @@
         <input type="submit" value="Create">
         <p></p>
         <p></p>
-    </form>
-    <form action={% url 'basic_app:user_login' %}>
-        {% csrf_token %}
         <label for="joinroom">Username</label>
         <input type="text" name="joinroom" placeholder="NAME PLEASE">
         <P></P>

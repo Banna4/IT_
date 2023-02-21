@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from basic_app.forms import UserForm,UserProfileInfoForm
 
 
